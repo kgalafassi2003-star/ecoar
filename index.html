@@ -3,23 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wallpaper</title>
+  <title>Minha Página com Imagem</title>
   <style>
-    html, body {
-      height: 100%;
+    body {
       margin: 0;
-      padding: 0;
+      height: 100vh;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    body {
-      background-image: url("imagem.jpg"); /* 👉 troque pelo nome da sua imagem */
-      background-size: cover; /* cobre toda a tela */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed; /* efeito fixo ao rolar */
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
+  <img src="imagem.jpg" alt="Minha imagem">
 </body>
 </html>

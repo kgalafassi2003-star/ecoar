@@ -12,21 +12,24 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      animation: zoom 12s ease-in-out infinite alternate;
     }
 
     img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
-       @keyframes zoom {
+
+      /* animação suave */
+      animation: zoom 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes zoom {
       0% {
-        background-size: 100%;
+        transform: scale(1);
       }
       100% {
-        background-size: 115%; /* aumenta um pouco sem distorcer */
+        transform: scale(1.12); /* aumenta um pouco sem distorcer */
       }
-    }
     }
   </style>
 </head>

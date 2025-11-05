@@ -8,7 +8,7 @@
     body {
       margin: 0;
       height: 100vh;
-      background-color: #000;
+      background-color: white;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -18,6 +18,14 @@
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
+       @keyframes zoom {
+      0% {
+        background-size: 100%;
+      }
+      100% {
+        background-size: 115%; /* aumenta um pouco sem distorcer */
+      }
+    }
     }
   </style>
 </head>
